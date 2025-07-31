@@ -20,6 +20,16 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CleverTapAccountID</key>
+	<string>TEST-KZZ-4Z9-747Z
+
+TEST-KZZ-4Z9-747Z
+
+TEST-KZZ-4Z9-747Z
+
+TEST-KZZ-4Z9-747Z</string>
+	<key>CleverTapToken</key>
+	<string>TEST-C14-113</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -34,7 +44,7 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
 	<key>RCTNewArchEnabled</key>
-	<false/>
+	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
