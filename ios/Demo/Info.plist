@@ -21,9 +21,9 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CleverTapAccountID</key>
-	<string>R57-875-KK7Z</string>
+	<string>YOUR Creds</string>
 	<key>CleverTapToken</key>
-	<string>5ab-a52</string>
+	<string>YOUR Creds</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
