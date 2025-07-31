@@ -1,20 +1,28 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+import React, { useEffect } from 'react';
+import {
+  StatusBar,
+  StyleSheet,
+  useColorScheme,
+  View,
+  Text,
+  Button,
+} from 'react-native';
+import CleverTap from 'clevertap-react-native';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
+  CleverTap.setDebugLevel(3);
+
+  
+  const handleEvent = () => {
+    CleverTap.recordEvent("Homescreen viewed","");
+  };
 
   return (
     <View style={styles.container}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <NewAppScreen templateFileName="App.tsx" />
+      <Text>Welcome to CleverTap Integration</Text>
+      <Button title="Send Event" onPress={handleEvent} />
     </View>
   );
 }
@@ -22,6 +30,8 @@ function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
